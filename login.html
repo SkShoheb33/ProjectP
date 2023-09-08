@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-name">
+            Project <span>P</span>
+        </div>
+    </div>
+    <div class="body">
+        <div class="form" id="login">
+            <div class="top-btns">
+                <div class="btn" onclick="toggleToLogin()">Login</div>
+                <span>|</span>
+                <div class="btn" onclick="toggleToSignup()">Signup</div>
+            </div>
+            <div class="username">
+                <input type="text" placeholder="enter user name">
+            </div>
+            <div class="password">
+                <input type="text" placeholder="enter password">
+            </div>
+            <a href="home.html"><button class="login-btn">Login</button></a>
+        </div>
+        <div class="form" id="signup">
+            <div class="top-btns">
+                <div class="btn" onclick="toggleToLogin()">Login</div>
+                <span>|</span>
+                <div class="btn" onclick="toggleToSignup()">Signup</div>
+            </div>
+            <div class="username">
+                <input type="text" placeholder="enter user name">
+            </div>
+            <div class="username">
+                <input type="text" placeholder="enter email">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="enter password">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="confrim password">
+            </div>
+            <button class="login-btn" >Signup</button>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+
+</body>
+</html>

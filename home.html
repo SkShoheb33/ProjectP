@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-name">
+            Project <span>P</span>
+        </div>
+        <div class="profile-btn">
+            username
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="new-project">
+                <button>New Project</button>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="recent-projects">
+                <div class="heading">
+                    Recent Projects
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-name"><i class="fa-solid fa-table-cells-large"></i>Project name</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-name"><i class="fa-solid fa-table-cells-large"></i>Project name</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-name"><i class="fa-solid fa-table-cells-large"></i>Project name</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-name"><i class="fa-solid fa-table-cells-large"></i>Project name</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-name"><i class="fa-solid fa-table-cells-large"></i>Project name</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle" id="a">
+            <div class="current-project">                 
+                <div class="heading">
+                    Current Project
+                </div>
+                <div class="curr-project-details">
+                    <div class="col">
+                        <div class="project-name">
+                            Project Name
+                        </div>
+                        <div class="username">
+                            Created by : <span>username</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="goto-workspace">
+                            <a href="WorkD.html"><button>Go to workspace</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit cupiditate quo repellendus vero unde, molestiae cum ab error cumque, eligendi excepturi ipsum explicabo itaque quam asperiores id deserunt ipsam?
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search for project">
+            </div>
+            <div class="updates">
+                <div class="heading">
+                    Updates on Projects Observing
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        project name : 
+                    </div>
+                    <div class="update">
+                        Update 
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        project name : 
+                    </div>
+                    <div class="update">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium quod optio commodi ut animi fugit odio eos laborum nam provident magni, a tempore aliquam dicta. Delectus dignissimos ducimus incidunt. 
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        project name : 
+                    </div>
+                    <div class="update">
+                        Update 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right" id="b">
+            <div class="heading">
+                Trending projects 
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-name">
+                        Project name
+                    </div>
+                    <div class="username">
+                        Created by <span>username</span>
+                    </div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    <div class="btns">
+                        <div class="like-btn"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                        <div class="view-btn" onclick="viewMore()">
+                            View info
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        Project name
+                    </div>
+                    <div class="username">
+                        Created by <span>username</span>
+                    </div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    <div class="btns">
+                        <div class="like-btn"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                        <div class="view-btn">
+                            View info
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-name">
+                        Project name
+                    </div>
+                    <div class="username">
+                        Created by <span>username</span>
+                    </div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    <div class="btns">
+                        <div class="like-btn"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                        <div class="view-btn">
+                            View info
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="explore" onclick="explore()">Explore</button>
+        </div>
+        <div class="trending-projects" id="c" >
+            <div class="heading"><i class="fa-solid fa-arrow-left"></i> Trending Projects</div>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button onclick="viewMore()">View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-details">
+                        <div class="col-1">
+                            <div class="project-name">Project name</div>
+                            <div class="username">Created by : <span>User name</span></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                            <div class="percent"><img src="./images//percent.svg" width="30%" alt="">5%</div>
+                            <div class="view"><button>View More</button></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quod impedit expedita est itaque voluptatibus, in officia nostrum esse facere ullam voluptatum excepturi et modi similique nemo laboriosam obcaecati vero dolorum incidunt, nulla quo ex? Distinctio excepturi explicabo obcaecati, ratione sunt ea sint in autem, ab illo laudantium perspiciatis animi.
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+        <div class="project-d" id="d">
+
+            <div class="project-details">
+                <div class="project-name">
+                    Project name
+                </div>
+                <div class="user-name">
+                    Created by : <span>User name</span>
+                </div>
+                <div class="statement">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae non necessitatibus provident, odit animi magni sed autem, repudiandae doloremque mollitia ut omnis blanditiis dolores voluptas nobis quam. Ad fugit, similique recusandae perspiciatis eaque corrupti possimus accusantium hic veniam a nam inventore molestiae! Distinctio pariatur, necessitatibus possimus, cumque perferendis eum porro suscipit dolorem corrupti minus dolore labore sunt saepe recusandae praesentium!
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis quam fugiat nemo, perspiciatis molestiae libero neque odio possimus ad alias, commodi, aspernatur quis voluptatem sequi. Voluptates eveniet adipisci neque quaerat accusamus officia a voluptatibus. Quo quos vel, fugit quis inventore, reprehenderit unde architecto pariatur tempora possimus amet. Nesciunt sapiente sit consectetur voluptatibus in nobis a modi praesentium ipsa culpa officiis, corporis facilis vitae numquam perferendis magni, qui tempore odit reprehenderit voluptatum. Consequuntur non ad, repellendus laboriosam temporibus doloribus obcaecati in et, quaerat fugit necessitatibus neque, autem eveniet rerum impedit dolor ut provident. Facilis repudiandae aspernatur fugiat iste inventore in veniam ipsa hic explicabo. Quasi velit odio veniam obcaecati unde architecto, sint deserunt aliquam odit rem non vitae eaque reprehenderit porro doloribus molestias iste totam neque ad dicta dolor quas est voluptatum! Molestias sequi explicabo vel et dolore minima praesentium nesciunt numquam id fuga. Aperiam aspernatur quis possimus similique numquam ut aliquam voluptas, repellendus illum vel. Eligendi, voluptatum incidunt. Libero corporis nulla quas! Eos, voluptates. Qui minus explicabo nihil quidem eligendi, officia quis provident atque? Aut totam molestias hic veniam delectus non harum. Delectus nesciunt facilis error officiis facere, minima nemo voluptas, alias sed dignissimos nam dolores porro neque nobis?
+                </div>
+                <div class="btns">
+                    <div class="btn"><i class="fa-solid fa-thumbs-up"></i>250</div>
+                    <div class="btn"><img src="images/percent.svg" width="40%" alt="">&nbsp;&nbsp;5%</div>
+                    <div class="btn">JOIN</div>
+                    <div class="btn">OBSERVE</div>
+                </div>
+                <div class="heading">
+                    contributors
+                </div>
+                <div class="contributors">
+                
+                    <div class="contributor">
+                        <div class="username">User name</div> 
+                        &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                        <div class="designation">Ui Designer</div>
+                    </div>
+                    <div class="contributor">
+                        <div class="username">User name</div> 
+                        &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                        <div class="designation">Ui Designer</div>
+                    </div>
+                    <div class="contributor">
+                        <div class="username">User name</div> 
+                        &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                        <div class="designation">Ui Designer</div>
+                    </div>
+                    <div class="contributor">
+                        <div class="username">User name</div> 
+                        &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                        <div class="designation">Ui Designer</div>
+                    </div>
+                    <div class="contributor">
+                        <div class="username">User name</div> 
+                        &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;
+                        <div class="designation">Ui Designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/home.js"></script>
+</body>
+</html>
