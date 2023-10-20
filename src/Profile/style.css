@@ -1,0 +1,16 @@
+#profile-pic{
+    background-image: url('https://mastimorning.com/wp-content/uploads/2023/08/shinchan-whatsapp-dp-Images.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+}
+.scroll-behaviour{
+    height: 92vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll !important;
+}
+.scroll-behaviour::-webkit-scrollbar{
+    display: hidden !important;
+}
