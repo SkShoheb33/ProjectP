@@ -1,15 +1,14 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCircleXmark,faBackward } from '@fortawesome/free-solid-svg-icons'
-import Navbar from './Navbar'
-function NewProject(props) {
+import { Link } from 'react-router-dom'
+function NewProject() {
     let roles = ['ux designer','front end','back end','tester']
   return (
-    <div className='h[100vh]'>
-        <Navbar/>
+    <div className=''>
         <div className='flex flex-col h-[92vh]'>
             <div className='flex flex-col items-start w-1/2 my-12  mx-auto'>
-                <div onClick={props.goToMain} className='text-xl flex items-center justify-center hover:cursor-pointer'><FontAwesomeIcon className='mr-4' icon={faBackward} />Back</div>
+                <Link to='/' className='text-xl flex items-center justify-center hover:cursor-pointer'><FontAwesomeIcon className='mr-4' icon={faBackward} />Back</Link>
                 <div className='flex items-start flex-col my-6 w-full'>
                     <div className='font-bold text-2xl'>Create a Project</div>
                     <div className='font-thin text-md'>Through a project workspace you can collaborate with others for a common goal</div>
@@ -43,7 +42,7 @@ function NewProject(props) {
                             })
                         }
                     </div>
-                    <div className='w-full bg-blue-500 hover:bg-blue-600 hover:cursor-pointer text-white py-2 rounded-md'>
+                    <div className='w-full text-center bg-blue-500 hover:bg-blue-600 hover:cursor-pointer text-white py-2 rounded-md'>
                         Submit
                     </div>
                 </div>

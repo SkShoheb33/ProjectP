@@ -3,3 +3,10 @@
     background-position: center;
     background-size: cover;
 }
+
+.active{
+    border-radius: 5px;
+    color: white !important;
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}

@@ -10,7 +10,7 @@ function RoadTask(props) {
         <div className='flex font-bold my-1'>
             {props.task.task}
         </div>
-        <div className='flex font-normal text-justify'>{props.task.desc}</div>
+        <div className='flex font-normal text-justify'>{props.task.taskDesc }</div>
     </div>
   )
 }

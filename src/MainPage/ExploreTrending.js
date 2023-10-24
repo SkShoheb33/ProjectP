@@ -1,6 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faThumbsUp,faPercent } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 function ExploreTrending(props) {
   return (
     <div className='flex flex-col items-start w-full my-4'>
@@ -18,7 +19,7 @@ function ExploreTrending(props) {
                     <FontAwesomeIcon icon={faPercent} />
                     {props.project.completed}
                 </div>
-                <div onClick={props.goToInfo} className='flex bg-blue-500 text-white px-2 py-1 rounded-md hover:cursor-pointer'>View more</div>
+                <Link to='projectInfo'  className='flex bg-blue-500 text-white px-2 py-1 rounded-md hover:cursor-pointer'>View more</Link>
             </div>
         </div>
         <div className='text-lg mt-2 text-justify'>{props.project.desc}</div>

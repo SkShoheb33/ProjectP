@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <React.Fragment>
@@ -6,9 +7,11 @@ function Navbar() {
             <div className='font-thin text-xl'>
                 Project <span className='font-semibold'>P</span>
             </div>
-            <div className='bg-blue-600 rounded-md px-3 py-1 text-lg hover:cursor-pointer'>
-                Login
-            </div>
+            <Link to='login'>
+              <div className='bg-blue-600 rounded-md px-3 py-1 text-lg hover:cursor-pointer'>
+                  Login
+              </div>
+            </Link>
         
         </div>
     </React.Fragment>

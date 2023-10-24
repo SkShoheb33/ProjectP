@@ -1,5 +1,6 @@
 import React from 'react'
 import TrendingProject from './TrendingProject'
+import { Link } from 'react-router-dom'
 function TrendingProjects(props) {
     let trendingProject = [{projectId:"1",project:"project1",createdBy:"user1",desc:"desc1",likes:"234"},
     {projectId:"1",project:"project2",createdBy:"user2",desc:"desc2",likes:"234"},{projectId:"3",project:"project3",createdBy:"user3",desc:"desc3",likes:"234"}]
@@ -9,9 +10,9 @@ function TrendingProjects(props) {
             TrendingProject
         </div>
         {trendingProject.map((project,index)=>
-            <TrendingProject key={index} project={project} goToInfo={props.goToInfo}/>
+            <TrendingProject key={index} project={project}/>
         )}
-        <div onClick={props.goToExplore} className='hover:cursor-pointer bg-gray-500 w-full rounded-md py-1 my-6 text-white'>Explore</div>
+        <Link to='explore' className='flex items-center justify-center hover:cursor-pointer bg-gray-500 w-full rounded-md py-1 my-6 text-white'>Explore</Link>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faThumbsUp} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 function TrendingProject(props) {
   return (
     <div className='flex flex-col my-4 items-start w-full'>
@@ -12,7 +13,7 @@ function TrendingProject(props) {
                 <FontAwesomeIcon  icon={faThumbsUp} />
                 {props.project.likes}
             </div>
-            <div onClick={props.goToInfo} className='hover:cursor-pointer bg-blue-500 text-white text-sm rounded-md px-2 py-1'>View info</div>
+            <Link to='explore/projectInfo' className='hover:cursor-pointer bg-blue-500 text-white text-sm rounded-md px-2 py-1'>View info</Link>
         </div>
     </div>
   )
